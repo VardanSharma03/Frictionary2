@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+:root{
+    --vdark: #590808;
+    --darker: #691e1e;
+    --dark: #ffffff; 
+    --light: #fff7f7;
+    --light1: #f37474;
+}
+
+.nosifer {
+    font-family: "Nosifer", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 80px;
+}
+
+* {
+    font-family: system-ui;
+    font-weight: 200;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url("view-world-monument-celebrate-world-heritage-day.jpg");
+    background-size: cover;
+}
+
+.rain {
+    height: 100vh;
+    background-image: url(rain.png);
+    animation: rain 0.8s linear infinite;
+}
+
+@keyframes rain {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 20% 100%;
+    }
+}
+
+.rain::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(lightining.png);
+    top: -100px;
+    transform: rotate(180deg);
+    animation: lightining 4s linear infinite;
+    opacity: 1;
+}
+
+@keyframes lightining {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    21% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    31% {
+        opacity: 1;
+    }
+
+    35% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.nab {
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    margin: 20px;
+}
+
+.img1 {
+    position: relative;
+    top: 1px;
+    filter: invert(1);
+    width: 15px;
+}
+
+.text {
+    font-size: 18px;
+}
+
+.btn span {
+    padding: 3px;
+}
+
+.ai {
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Arvo", serif;
+    display: flex;
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    transition: 0.5s;
+    letter-spacing: 0.1rem;
+    border-radius: 20px;
+    border: 2px solid var(--darker);
+    padding: 10px;
+    height: 22px;
+}
+
+.ai:hover {
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    box-shadow: 0 0 35px var(--darker);
+}
+
+.list {
+    position: relative;
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    font-size: 25px;
+}
+
+.nab h2 {
+    position: relative;
+    font-size: 45px;
+    color: var(--dark);
+    transition: 1.5s;
+    font-weight: 500;
+    font-family: "Arvo", serif;
+    z-index: 2;
+}
+
+.heading {
+    height: 55vh;
+    display: flex;
+    color: azure;
+    justify-content: center;
+    align-items: center;
+}
+
+.hi {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    flex-direction: row-reverse;
+}
+
+.hi li {
+    list-style: none;
+    color: var(--darker);
+    font-weight: bold;
+    font-family: "Arvo", serif;
+    letter-spacing: 10px;
+    filter: blur(1px);
+    transition: 2.5s;
+    font-size: 120px;
+}
+
+.hi li:hover,
+.hi li:hover~li {
+    transform: rotate(180deg)translateX(-200px);
+    transition: 2s;
+    filter: blur(320px);
+    opacity: 0;
+}
+
+.list li {
+    color: var(--dark);
+    font-weight: 400;
+}
+
+.nab h2:hover {
+    color: var(--vdark);
+    transform: scale(2);
+    filter: blur(120px);
+    box-shadow: 0 0 735px var(--vdark);
+}
+
+.img {
+    position: relative;
+    left: -26%;
+    opacity: 0;
+    z-index: 1;
+    transition-duration: 1.3s;
+}
+
+.nab li:hover {
+    color: whitesmoke;
+    border: 4px solid var(--darker);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nab li {
+    border-radius: 30px;
+    width: 90px;
+    transition-duration: 0.2s;
+    display: flex;
+    justify-content: center;
+    font-weight: 450;
+    align-content: center;
+    height: 38px;
+    justify-items: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32vh;
+
+}
+.footer img{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 40px;
+    filter: invert();
+    transition-duration: 0.2s;
+}
+.footer img:hover{
+    color: var(--light);
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+.open{
+    height:142px;
+}
+
+.nab .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+.dropdown-content {
+    display: none;
+    border-radius: 30px;
+    position: absolute;
+    top: 85px;
+    right: 20px;
+    background-color: #dd9a9a;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    height: 200px;
+  }
+  .dropdown-content li{
+    text-decoration-style: none;
+  }
+
+  .dropdown-content a {
+    display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+
+  .dropdown-content .l:hover {
+    border-radius: 20px;
+    background-color: #f1f1f1;
+  }
+
+
+
+
+@media(max-width:900px){
+    .nab .text,
+    .nab .ai{
+        display: none;
+    }
+    .nab .toggle_btn{
+        display: block;
+    }
+    body{
+        background-image: url('pexels-ozundunyasina-48519597-8024457.jpg');
+    }
+    .hi li {
+        font-size: 60px;
+    }
+    .heading{
+        height: 50vh;
+    }
+    .box{
+        height:32vh
+    }
+    .nab h2 {
+        color: var(--darker);
+    }
+    .dropdown-content{
+        display: block;
+    }
+    .heading{
+        position: relative;
+        top: 80px;
+    }
+    .button-container{
+        position: relative;
+        top: -40px;
+    }
+    .footer{
+        position: relative;
+        height: 5vh;
+        top: -60px;
+    }
+}
